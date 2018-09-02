@@ -32,6 +32,8 @@ Say, in fedora Linux you can install them with
   $ sudo dnf install -y djvulibre poppler-utils netpbm-progs 
 ```
 
-Remark: if you would like to get a greyscale or color DjVu file which 
-would would keep the scale of gray tones or the colors but would be much larger 
-in size I suggest to use an excellent pdf2djvu program by Jakub Wilk.
+**Remark:** if you would like to get a greyscale or color DjVu file which 
+would would keep the
+[shades of gray](https://en.wikipedia.org/wiki/Shades_of_gray)
+or the colors but would be much larger  in size I suggest to use 
+an [excellent pdf2djvu program by Jakub Wilk](http://jwilk.net/software/pdf2djvu).
