@@ -30,7 +30,8 @@ Say, in fedora Linux you can install them with
 
 ```bash
   $ sudo dnf install -y djvulibre poppler-utils netpbm-progs 
-```
+```  
+
 
 **Remark:** if you would like to get a greyscale or color DjVu file which 
 would would keep the
