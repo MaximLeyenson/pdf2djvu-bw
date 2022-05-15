@@ -5,7 +5,7 @@ Most useful for scanned documents.
 
 Usage: 
 ```bash
-  $ pdf2djvu-bw.py input.pdf output.bw.djvu <resolution> <losslevel>
+  $ pdf2djvu-bw.py3.py input.pdf output.bw.djvu <resolution> <losslevel>
 ```
 
 Where <resolution> is the DjVu file resolution in dpi, and <losslevel> is the
@@ -13,7 +13,7 @@ DjVu losslevel parameter.
 
 Example:
 ```bash
-  $ pdf2djvu-bw.py scanned-paper.pdf paper.bw.djvu 300  100
+  $ pdf2djvu-bw.py3.py scanned-paper.pdf paper.bw.djvu 300  100
 ```
 
 
@@ -62,20 +62,19 @@ Then the trouple comes: Ubunutu Linux has an ultra-old version of the netpbm wit
 So do the following:
 
 ```bash
-   $ sudo apt remove netpbm    # if you have this trioubled version installed 
+   $ sudo apt remove netpbm    # if you have this troubled version installed 
    $ wget https://sourceforge.net/projects/netpbm/files/super_stable/10.73.38/netpbm-sf-10.73.38_amd64.deb
 
    $ sudo apt install -y libjpeg62       # this is a dep
 
-   $ sudo dpkg -i netpbm-sf-10.73.38_amd64.deb
+   $ sudo dpkg -i netpbm-sf-10.73.38_amd64.deb && rm -vf netpbm-sf-10.73.38_amd64.deb
 ```  
 
-This installs the deb package from the official NetPBM page,
-http://sourceforge.net/projects/netpbm/files/super_stable/
+This installs the deb package from the [official NetPBM page, stable releases](http://sourceforge.net/projects/netpbm/files/super_stable/)
 
-home page: http://netpbm.sourceforge.net/doc/directory.html
+[Home page](http://netpbm.sourceforge.net/doc/directory.html)
 
-Docs: http://netpbm.sourceforge.net/getting_netpbm.php
+[Docs on installing netpbm](http://netpbm.sourceforge.net/getting_netpbm.php)
 
 
 See also the following bugs and discussions:
@@ -94,9 +93,11 @@ NetPBM home page says:
     a Ubuntu bug report about this. The Debian bug report was opened in
     2006 .."
 
-https://bugs.launchpad.net/ubuntu/+source/netpbm-free/+bug/270479  opened 2008
-(also https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=380172 )
+Bug reports:
 
+  * https://bugs.launchpad.net/ubuntu/+source/netpbm-free/+bug/270479  opened in 2008
+  * https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=380172 
+  
 
 **Remark:** if you would like to get a greyscale or color DjVu file which 
 would would keep the
